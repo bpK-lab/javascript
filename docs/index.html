@@ -6,8 +6,8 @@
 </head>
 <body>
     <script>
-function toggle() {
-    const compSection = document.getElementById('aff');
+function toggle(element) {
+    const compSection = element.getElementById('aff');
     compSection.style.display =
         compSection.style.display === 'none' ? 'block' : 'none';
 }
@@ -34,6 +34,7 @@ function toggle() {
 </main>
 </body>
 </html>
+
 
 
 
