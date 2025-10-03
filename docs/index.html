@@ -5,6 +5,14 @@
     <title>Mon CV</title>
 </head>
 <body>
+    <script>
+function toggleCompetences() {
+    const compSection = document.getElementById('competences');
+    compSection.style.display =
+        compSection.style.display === 'none' ? 'block' : 'none';
+}
+
+</script>
 <header>
     <h1>Nom Prénom</h1>
     <img src="photo.jpg" alt="Photo de profil">
@@ -17,7 +25,8 @@
             <li>BTS SIO – Lycée X</li>
         </ul>
     </section>
-    <section>
+    <button onclick(toggleCompetences())> Afficher / Masquer les compétences</button>
+    <section id="competences">
         <h2>Compétences</h2>
         <ul>
             <li>HTML, CSS, JavaScript</li>
@@ -26,3 +35,4 @@
 </main>
 </body>
 </html>
+
