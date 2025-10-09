@@ -6,8 +6,8 @@
 </head>
 <body>
     <script>
-function toggle(element) {
-    const compSection = document.getElementById('aff');
+function toggle(id) {
+    const compSection = document.getElementById(id);
     compSection.style.display =
         compSection.style.display === 'none' ? 'block' : 'none';
 }
@@ -20,20 +20,21 @@ function toggle(element) {
 </header>
 <main>
     <section>
-        <h2 onclick="toggle(this)">Formation</h2>
-        <ul>
+        <h2 onclick="toggle(form)">Formation</h2>
+        <ul id="form">
             <li>BTS SIO – Lycée X</li>
         </ul>
     </section>
     <section>
-        <h2 onclick="toggle(this)">Compétences</h2>
-        <ul>
+        <h2 onclick="toggle(comp)">Compétences</h2>
+        <ul id="comp">
             <li>HTML, CSS, JavaScript</li>
         </ul>
     </section>
 </main>
 </body>
 </html>
+
 
 
 
