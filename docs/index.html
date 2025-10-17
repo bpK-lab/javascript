@@ -1,39 +1,41 @@
 <!DOCTYPE html>
-<html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/index.css">
     <title>Mon CV</title>
 </head>
-<body>
-    <script>
-function toggle(id) {
-    const compSection = document.getElementById(id);
-    compSection.style.display =
-        compSection.style.display === 'none' ? 'block' : 'none';
-}
-
-</script>
-<header>
-    <h1>Nom Prénom</h1>
-    <img src="photo.jpg" alt="Photo de profil">
-    <p>Contact : email@example.com</p>
-</header>
-<main>
-    <section>
-        <h2 onclick="toggle('form')">Formation</h2>
-        <ul id="form">
-            <li>BTS SIO – Lycée X</li>
-        </ul>
-    </section>
-    <section>
-        <h2 onclick="toggle('comp')">Compétences</h2>
-        <ul id="comp">
-            <li>HTML, CSS, JavaScript</li>
-        </ul>
-    </section>
-</main>
+<body id="dark">
+    <script src="js/script.js"></script>
+    <header>
+        <h1>Nom Prénom</h1>
+        <img src="photo.jpg" alt="Photo de profil">
+        <p>Contact : email@example.com</p>
+    </header>
+    <main>
+        <section>
+            <h2 onclick="toggle('form')">Formation</h2>
+            <ul id="form">
+                <li>BTS SIO – Lycée X</li>
+            </ul>
+        </section>
+        <section>
+            <h2 onclick="toggle('comp')">Compétences</h2>
+            <ul id="comp">
+                <li>HTML, CSS, JavaScript</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Travaux</h2>
+            <ul>
+                <li>Pokedex (statique)</li>
+                <li>Musicol</li>
+            </ul>
+        </section>
+        <button onclick="toggledark()">Changement de mode</button>
+    </main>
 </body>
 </html>
+
 
 
 
